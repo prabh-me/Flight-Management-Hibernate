@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+ <hibernate-mapping>
+    <class name="flight.hibernate.Flight" table="flight" >
+        <id name="id" column="id">
+            <generator class="increment"></generator>
+        </id>
+        <property name="flightNo" column="flightno"></property>
+        <property name="depLoc" column="deploc"/>
+        <property name="arrLoc" column="arrloc"/>
+        <property name="validTill" column="validtill"/>
+        <property name="flightTime" column="flighttime"/>
+        <property name="flightDur" column="flightdur"/>
+        <property name="fare" column="fare"/>
+        <property name="seatAvailability" column="seatavailability"/>
+        <property name="TravelClass" column="class"/>
+    </class>
+ </hibernate-mapping>   
